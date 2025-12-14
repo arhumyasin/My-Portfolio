@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { motion } from "motion/react";
@@ -67,7 +68,7 @@ const Projects = () => {
                 href={`/projects/${project.slug}`}
                 className="block h-48 overflow-hidden"
               >
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
