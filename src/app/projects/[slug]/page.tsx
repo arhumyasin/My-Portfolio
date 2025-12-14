@@ -10,8 +10,8 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: `${projectsData[0].title} | DevsPro`,
-  description: "Created by devsloka.in ",
+  title: `${projectsData[0].title} | Arhum Yasin`,
+  description: "Created by Arhum Yasin ",
 };
 export default async function ProjectDetailPage({
   params,

@@ -12,36 +12,36 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     id: "ecommerce-platform",
-    title: "E-Commerce Platform",
+    title: "Ochi Interactive Studio",
     description:
-      "A modern e-commerce platform with cart functionality, user authentication, and payment processing.",
+      "A high-quality React rebuild of the Ochi design studio website, featuring advanced Framer Motion animations and fluid transitions. This project highlights my capability to create premium, animation-heavy experiences with performance and precision.",
     image:
-      "https://images.unsplash.com/photo-1746311372686-e164b0bcb333?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "/images/Ochi.png",
+    tags: ["Framer Motion (Advanced Animations)","React.js","Motion Layouts", "GSAP", "Tailwind CSS", "locomotive.js", "Interaction Design"],
+    github: "https://github.com/arhumyasin",
+    // live: "https://example.com",
   },
   {
     id: "task-management",
-    title: "Task Management App",
+    title: "Skiper Ui",
     description:
-      "A collaborative task management application with real-time updates and team functionality.",
+      "A responsive React-based UI website rebuilt to replicate Skiper’s clean design system and modern component behavior. This project demonstrates my ability to convert complex UI layouts into production-ready React interfaces with smooth interactions.",
     image:
-      "https://images.unsplash.com/photo-1746311372686-e164b0bcb333?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags: ["React", "Firebase", "Tailwind CSS", "Redux"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "/images/Skiper.png",
+    tags: ["React.js", "State Management","Reusable Ui Components","Tailwind CSS", "Component Architecture"],
+    github: "https://github.com/arhumyasin",
+    // live: "https://example.com",
   },
   {
     id: "portfolio-website",
-    title: "Portfolio Website",
+    title: "Lazarev Agency",
     description:
-      "A customizable portfolio template for developers to showcase their work and skills.",
+      "A modern agency-style website built to showcase high-quality animations, smooth interactions, and premium UI design. Created to demonstrate the type of professional, visually impressive websites I can build for real brands and businesses.",
     image:
-      "https://images.unsplash.com/photo-1746311372686-e164b0bcb333?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    tags: ["Next.js", "Framer Motion", "Tailwind CSS"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "/images/Ai.png",
+    tags: ["GSAP","Html", "CSS", "JavaScript", "2D Animations", "Interactive Design","Design-to-Code Execution"],
+    github: "https://github.com/arhumyasin",
+    // live: "https://example.com",
   },
 ];
 
@@ -65,8 +65,7 @@ export default function Projects() {
               Featured Projects
             </h2>
             <p className="max-w-[700px] mx-auto text-muted-foreground">
-              A selection of my recent work. Each project is unique and solves
-              specific problems.
+              A selection of my recent work. Each project is unique and Interactive Design with Animations.
             </p>
           </div>
 
@@ -144,12 +143,12 @@ function ProjectCard({ project }: { project: Project }) {
       <div className="p-6 space-y-4 relative z-10">
         <div className="flex items-start justify-between">
           <h3 className="text-xl font-bold">{project.title}</h3>
-          <motion.div
+          {/* <motion.div                                                              //! Arrow in Right side
             className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center"
             whileHover={{ rotate: 360 }}
           >
             <ExternalLink className="h-4 w-4" />
-          </motion.div>
+          </motion.div> */}
         </div>
         <p className="text-sm text-muted-foreground">{project.description}</p>
 

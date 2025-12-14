@@ -2,30 +2,30 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Github, Linkedin, Twitter, Mail, Heart } from "lucide-react";
+import { Mail, Heart, GithubIcon, X } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
     {
-      icon: <Github className="h-5 w-5" />,
-      href: "https://github.com",
+      icon: <GithubIcon className="h-5 w-5" />,
+      href: "https://github.com/arhumyasin",
       label: "GitHub",
     },
+    // {
+    //   icon: <Linkedin className="h-5 w-5" />,
+    //   href: "https://linkedin.com",
+    //   label: "LinkedIn",
+    // },
     {
-      icon: <Linkedin className="h-5 w-5" />,
-      href: "https://linkedin.com",
-      label: "LinkedIn",
-    },
-    {
-      icon: <Twitter className="h-5 w-5" />,
-      href: "https://twitter.com",
+      icon: <X className="h-5 w-5" />,
+      href: "https://x.com/ArhumVista",
       label: "Twitter",
     },
     {
       icon: <Mail className="h-5 w-5" />,
-      href: "mailto:hello@example.com",
+      href: "mailto:arhumvista@gmail.com",
       label: "Email",
     },
   ];
@@ -46,7 +46,7 @@ export default function Footer() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link href="/">DevsPro</Link>
+            <Link href="/">Arhum Yasin</Link>
           </motion.div>
 
           {/* Navigation */}
@@ -92,7 +92,7 @@ export default function Footer() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            <span>© {currentYear} DevsPro. Made with</span>
+            <span>© {currentYear} Arhum Yasin. Made with</span>
             <motion.div
               animate={{
                 scale: [1, 1.2, 1],
@@ -106,7 +106,7 @@ export default function Footer() {
             >
               <Heart className="h-4 w-4 text-red-500" />
             </motion.div>
-            <span>and Next.js</span>
+            <span>and React.js</span>
           </motion.div>
         </div>
       </div>

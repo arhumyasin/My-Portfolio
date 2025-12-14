@@ -2,8 +2,8 @@ import Projects from "@/components/projects/project-comp";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects | DevsPro",
-  description: "Created by devsloka.in ",
+  title: "Projects | Arhum Yasin",
+  description: "Created by Arhum Yasin ",
 };
 
 const ProjectsPage = () => {

@@ -105,9 +105,11 @@ const ProjectDetail = ({ project }: { project: ProjectItem }) => {
                   <Image
                     src={img}
                     alt={`${project.title} screenshot ${idx + 1}`}
-                    width={800}
-                    height={600}
-                    className="object-cover aspect-video w-full h-[500px]"
+                    width={900}
+                    height={700}
+                    className="object-cover object-center  w-full h-full"
+                    quality={100}
+                    priority={idx === 0}
                   />
                 </div>
               ))}

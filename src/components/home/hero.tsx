@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, XIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -92,7 +92,7 @@ export default function Hero() {
             className="text-sm text-muted-foreground px-4 py-2 rounded-full bg-background/80 backdrop-blur-sm border"
             variants={item}
           >
-            Turning complex problems into elegant solutions since 2015
+            Turning complex problems into elegant solutions
           </motion.div>
 
           {/* CTA Buttons */}
@@ -128,7 +128,7 @@ export default function Hero() {
           {/* Social Links */}
           <motion.div className="flex space-x-4 mt-8" variants={item}>
             <motion.a
-              href="https://github.com/PriyanshuGupta28"
+              href="https://github.com/arhumyasin"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-background/80 backdrop-blur-sm border shadow-sm hover:bg-muted/80 transition-colors"
@@ -138,7 +138,7 @@ export default function Hero() {
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </motion.a>
-            <motion.a
+            {/* <motion.a
               href="www.linkedin.com/in/priyanshukrgupta/"
               target="_blank"
               rel="noopener noreferrer"
@@ -148,16 +148,16 @@ export default function Hero() {
             >
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
-            </motion.a>
+            </motion.a> */}
             <motion.a
-              href="https://x.com/28Priyanshu2001"
+              href="https://x.com/ArhumVista"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-background/80 backdrop-blur-sm border shadow-sm hover:bg-muted/80 transition-colors"
               whileHover={{ y: -5 }}
               whileTap={{ scale: 0.9 }}
             >
-              <Twitter className="h-5 w-5" />
+              <XIcon className="h-5 w-5" />
               <span className="sr-only">Twitter</span>
             </motion.a>
           </motion.div>

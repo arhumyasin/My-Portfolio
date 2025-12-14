@@ -54,13 +54,13 @@ export default function Navbar() {
           >
             <Avatar className="w-8 h-8">
               <AvatarImage
-                src="https://avatars.githubusercontent.com/u/112753528?v=4"
+                src="images/Me.png"
                 alt="Avatar"
                 className="rounded-full"
               />
               <AvatarFallback>C</AvatarFallback>
             </Avatar>
-            DevsPro
+            Arhum Yasin
           </Link>
 
           {/* Desktop Menu */}

@@ -16,33 +16,33 @@ import { Badge } from "@/components/ui/badge";
 const experiences = [
   {
     id: 1,
-    title: "Senior Frontend Developer",
-    company: "TechCorp Inc.",
-    location: "San Francisco, CA",
-    period: "2021 - Present",
-    skills: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
+    title: "Frontend Developer",
+    company: "Freelancing",
+    location: "Pakistan",
+    period: "2023 - Present",
+    skills: ["HTML", "CSS", "JavaScript", "React", "GSAP", "Framer Motion", "Lenis Smooth Scrolling", "Parallex Effects", "Tailwind CSS"],
     description:
-      "Led the development of the company's flagship product, improving performance by 40% and implementing new features that increased user engagement by 25%.",
+      "Led the creation of high-performance, visually compelling web interfaces with a strong focus on responsiveness, user experience, and modern development practices. Built dynamic products end-to-end, optimized workflows, and delivered interactive experiences that significantly improved user engagement and retention.",
   },
   {
     id: 2,
-    title: "Frontend Developer",
-    company: "InnovateTech",
-    location: "New York, NY",
-    period: "2018 - 2021",
-    skills: ["Vue.js", "JavaScript", "SCSS", "GraphQL"],
+    title: "Creative Technologist (Interactive & Visual Experiences)",
+    company: "Freelancing",
+    location: "Pakistan",
+    period: "2024",
+    skills: ["Framer Motion", "React.js","GSAP Advanced Animations","Creative Coding","Interaction Design"],
     description:
-      "Developed and maintained multiple client-facing applications, collaborating with designers and backend developers to deliver high-quality products.",
+      "Designed and developed immersive digital experiences that blend creativity with technology. Worked on interactive 2D environments, smooth micro-interactions, and visually rich interfaces using modern animation tools. Passionate about pushing the boundaries of web creativity through experimental design, performance-optimized visuals, and innovative user interactions.",
   },
   {
     id: 3,
-    title: "Web Developer",
-    company: "DigitalSolutions",
-    location: "Boston, MA",
-    period: "2015 - 2018",
-    skills: ["HTML", "CSS", "JavaScript", "jQuery", "PHP"],
+    title: "Video Editor",
+    company: "GS News",
+    location: "Pakistan",
+    period: "2025",
+    skills: ["Filmora", "News-Style Editing", "Broadcast Formatting", "Story Sequencing","Deadline-Driven Workflows"],
     description:
-      "Created responsive websites for clients across various industries, ensuring cross-browser compatibility and optimal performance.",
+      "Produced fast-paced, broadcast-ready video segments for news content, ensuring clarity, accuracy, and strong visual storytelling. Specialized in cutting news bulletins, highlight packages, tickers, lower-thirds, and breaking-news formats commonly used across leading Pakistani news channels. Maintained tight deadlines, delivered consistent output under pressure, and ensured every edit met newsroom standards for pacing, tone, and credibility.",
   },
 ];
 

@@ -14,89 +14,88 @@ export interface ProjectItem {
 
 export const projectsData: ProjectItem[] = [
   {
-    title: "Finance Dashboard",
+    title: "K72 Website — Responsive Modern UI with Animation",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization.",
+      "A fully responsive modern website built with React, Tailwind CSS, React Router DOM, and advanced GSAP + ScrollTrigger animations — delivering a smooth, premium interactive experience.",
     longDescription:
-      "Finance Dashboard is a comprehensive financial analytics platform designed for businesses and individuals to track, analyze, and visualize their financial data in real-time. The application provides intuitive dashboards, interactive charts, and detailed reports that help users make data-driven financial decisions.\n\nUsing modern web technologies, the platform offers a seamless user experience with responsive design and real-time updates. The dashboard includes expense tracking, income management, budget planning, investment monitoring, and financial goal setting features.",
+      "The K72 Website is a fully responsive and modern web experience built with React.js, using React Router DOM for smooth page navigation and Tailwind CSS for clean, scalable styling. The website incorporates GSAP, ScrollTrigger, and custom 2D animations to create an immersive, dynamic interface.Every section is thoughtfully crafted to provide engaging interactions, fluid transitions, and a premium-level user experience. The site adapts beautifully across all devices, ensuring that users enjoy the same polished interface on mobile, tablet, and desktop. 2D animations, micro-interactions, and controlled motion sequences give the website a unique visual identity. Combined with optimized performance, lightweight components, and a consistent design system, the K72 Website reflects professional-grade front-end development.",
     features: [
-      "Real-time financial data visualization",
-      "Interactive charts and graphs",
-      "Expense categorization and tracking",
-      "Budget planning and monitoring",
-      "Financial report generation",
-      "Data export capabilities",
-      "Mobile-responsive design",
+      "Advanced GSAP + ScrollTrigger Animations",
+      "Custom 2D Visual Animations",
+      "Smooth Page Navigation using React Router DOM",
+      "Micro-interactions for Better UX",
+      "Optimized Performance and Fast Loading",
+      "Consistent and Scalable Design System",
+      "Responsive Layout across all screen sizes",
     ],
     challenges:
-      "One of the main challenges was implementing real-time data updates while maintaining optimal performance. We solved this by using WebSockets for critical updates and implementing efficient data caching strategies. Another challenge was creating intuitive data visualizations that could convey complex financial information clearly to users with varying levels of financial literacy.",
-    image:
-      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800",
-    images: [
-      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800",
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800",
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800",
-    ],
-    tech: ["React", "TypeScript", "Chart.js", "TailwindCSS"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "Designed and fine-tuned custom 2D animations using GSAP, ensuring they blend naturally with scroll progress and user interactions.",
+    image: "/images/Ropes.jpg",
+    images: ["/images/Menu.jpg", "/images/Ropes.jpg", "/images/Front.jpg"],
+    tech: ["React.js", "GSAP", "ScrollTrigger", "TailwindCSS"],
+    github: "https://github.com/arhumyasin",
+    // live: "https://example.com",
     slug: "finance-dashboard",
   },
   {
-    title: "E-commerce Platform",
+    title: "Skiper UI — Modern Interface with Advanced Components",
     description:
-      "Modern shopping experience with advanced filtering and payment processing.",
+      "A polished, responsive UI system built using React, TypeScript folders, Tailwind CSS, and Lucide React — featuring smooth animations and reusable component architecture.",
     longDescription:
-      "This e-commerce platform provides a complete online shopping experience with a focus on user experience and performance. It features a robust product catalog, advanced filtering and search capabilities, secure checkout process, and comprehensive user accounts.\n\nBuilt with Next.js for optimal performance and SEO, the application uses server-side rendering for fast page loads and a seamless shopping experience. The platform integrates with Stripe for secure payment processing and MongoDB for flexible data storage.",
+      "Skiper UI is a complete modern interface rebuilt using React inside a TypeScript-supported folder structure. Since the Skiper library is fully optimized for TypeScript, the project maintains clean architecture, strongly typed files, and modular component organization. The UI includes a wide range of reusable components, smooth animations, and pixel-perfect layout styling achieved using Tailwind CSS. Lucide React icons enhance the visual identity while GSAP-inspired motion patterns bring subtle micro-animations, hover effects, and transitions to life. The entire experience delivers a clean, premium, and functional modern UI suitable for dashboards, SaaS platforms, and interactive websites.",
     features: [
-      "Product catalog with categories and tagging",
-      "Advanced filtering and search functionality",
-      "User accounts and order history",
-      "Secure checkout with Stripe integration",
-      "Responsive design for all devices",
-      "SEO optimization",
-      "Inventory management",
+      "Clean, Reusable, and Scalable UI Components",
+      "Modern Layouts with Tailwind CSS Utility Classes",
+      "Lucide React Icons for Crisp Visual Identity",
+      "Smooth Hover Interactions and Micro-Animations",
+      "TypeScript-Compatible Folder Structure",
+      "Fast Rendering with Optimized Component Architecture",
+      "Fully Responsive Design for All Screen Sizes"
     ],
-    challenges:
-      "The main challenge was building a performant application that could handle thousands of products while maintaining fast search and filtering capabilities. We implemented efficient database indexing and search algorithms to ensure quick response times. Another challenge was creating a seamless checkout flow that prioritized security while minimizing friction for users.",
-    image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800",
+    challenges: `Maintaining a Strong Component Architecture:
+                 Ensuring every UI block remained reusable and scalable required a clean TypeScript folder structure and strict separation of concerns.
+
+                 Balancing Visual Aesthetics with Performance:
+                 Used lightweight motion effects and optimized utility classes to keep animations smooth without affecting load time.`,
+
+    image: "/images/Skiper.png",
     images: [
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800",
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800",
+      "/images/SkiperCard.jpg",
+      "/images/Skiper.png",
+      "/images/Name.jpg",
     ],
-    tech: ["Next.js", "Stripe", "MongoDB", "Redux"],
-    github: "https://github.com",
-    live: "https://example.com",
+    tech: ["React.js", "TypeScript (Structure)", "Tailwind CSS", "Lucide React", "Reusable Components"],
+    github: "https://github.com/arhumyasin",
+    // live: "https://example.com",
     slug: "ecommerce-platform",
   },
   {
-    title: "Task Management App",
+    title: "OCHI — Modern React + Tailwind Fully Animated Website",
     description:
-      "Collaborative project management tool with drag-and-drop functionality.",
+      "A highly interactive, animation-rich website inspired by OCHI, built with React, Tailwind CSS, Framer Motion, Locomotive Scroll, ScrollTrigger, and custom 2D animation sequences to deliver a premium, modern visual experience.",
     longDescription:
-      "The Task Management App is a collaborative project management tool designed to help teams organize their work efficiently. With an intuitive kanban-style interface, teams can visualize their workflow and track progress on projects and tasks.\n\nThe application features drag-and-drop functionality for easy task management, real-time updates for team collaboration, file attachments, comments, and deadline tracking. Built with Vue.js and Firebase, it offers a responsive and real-time experience across devices.",
+      "This project is a fully responsive and animation-focused website crafted to replicate the smooth, minimal, and cinematic feel of OCHI’s official experience. I combined Framer Motion, Locomotive Scroll, and GSAP ScrollTrigger to build fluid parallax transitions, custom cursor interactions, staggered 2D animations, section reveals, and modern card-based layouts. The entire site is optimized for performance, micro-interactions, pixel-perfect visual balance, and a premium luxury-brand feel.",
     features: [
-      "Kanban-style board with customizable columns",
-      "Drag-and-drop task management",
-      "Real-time updates and collaboration",
-      "Task assignments and deadlines",
-      "File attachments and comments",
-      "Task filtering and search",
-      "Project templates and task checklists",
+      "Smooth locomotive scrolling with inertia effects",
+      "Cinematic section transitions",
+      "2D animated elements with staggered timing",
+      "Parallax image & text animations",
+      "Interactive hover effects with custom cursor",
+      "Clean and minimal brand-inspired UI",
+      "Fully responsive layout for all screen sizes",
+      "High-performance GPU-accelerated animations",
+
     ],
     challenges:
-      "Implementing a smooth drag-and-drop experience that worked well across devices was particularly challenging. We utilized the DnD Kit library and implemented custom optimizations to ensure responsive performance on both desktop and mobile. Another challenge was managing real-time updates efficiently without overwhelming the database with requests.",
-    image:
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800",
+      "Locomotive Scroll and GSAP ScrollTrigger often conflict when used together.",
+    image: "/images/Eyes.jpg",
     images: [
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800",
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800",
-      "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800",
+      "/images/Eyes.jpg",
+      "/images/Ochi.png",
+      "/images/TextCard.jpg",
     ],
-    tech: ["Vue.js", "Firebase", "Tailwind CSS", "DnD Kit"],
-    github: "https://github.com",
+    tech: ["React.js","Tailwind CSS","Framer Motion","GSAP + ScrollTrigger","Locomotive Scroll","2D Animation Techniques","Responsive & Modern UI/UX","Component-based Architecture",],
+    github: "https://github.com/arhumyasin",
     slug: "task-management",
   },
 ];

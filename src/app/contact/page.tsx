@@ -3,8 +3,8 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Contact | DevsPro",
-  description: "Created by devsloka.in ",
+  title: "Contact | Arhum Yasin",
+  description: "Arhum Yasin",
 };
 const ContactPage = () => {
   return (

@@ -30,14 +30,17 @@ export default function BottomHero() {
   }, []);
 
   const skills = [
-    "Front-end Development",
-    "Back-end Systems",
-    "Database Design",
-    "API Integration",
+    "Front-End Development",
     "UI/UX Design",
-    "Performance Optimization",
+    "GSAP Animations",
+    "Lenis Smooth Scroll",
+    "ScrollTrigger",
+    "Parallax Effects",
+    "Lenis Smooth Scrolling",
+    "Responsive Web Design",
     "Testing & QA",
-    "DevOps",
+    "API Integration",
+    "Responsive Testing",
   ];
 
   return (
@@ -59,10 +62,10 @@ export default function BottomHero() {
               Digital Excellence
             </h2>
             <p className="text-muted-foreground mb-6">
-              With expertise in both frontend and backend technologies, I create
-              seamless, scalable solutions that provide real value. Every line
-              of code is written with purpose, performance, and future
-              maintainability in mind.
+              I craft clean, responsive, and high-performance front-end
+              experiences using modern technologies. Every component is built
+              with purpose, smooth interactions, and a focus on great user
+              experience.
             </p>
             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
               {skills.map((skill, index) => (

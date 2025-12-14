@@ -46,7 +46,7 @@ const Projects = () => {
             className="text-muted-foreground max-w-2xl "
             style={{ animationDelay: "200ms" }}
           >
-            A collection of my work across various domains, technologies, and
+            A collection of my work across various Animations, technologies, and
             platforms. Click on any project to learn more about it.
           </p>
         </div>

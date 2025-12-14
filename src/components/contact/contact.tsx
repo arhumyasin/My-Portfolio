@@ -84,10 +84,10 @@ const Contact = () => {
                   <h3 className="font-medium">Email</h3>
                   <p className="text-muted-foreground">
                     <a
-                      href="mailto:hello@devspro.com"
+                      href="mailto:arhumvista@gmail.com"
                       className="hover-underline"
                     >
-                      hello@devspro.com
+                      arhumvista@gmail.com
                     </a>
                   </p>
                 </div>
@@ -100,8 +100,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-medium">Phone</h3>
                   <p className="text-muted-foreground">
-                    <a href="tel:+12345678901" className="hover-underline">
-                      +1 (234) 567-8901
+                    <a href="tel:+92-3291130061" className="hover-underline">
+                      +92 3291130061
                     </a>
                   </p>
                 </div>
@@ -114,7 +114,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-medium">Location</h3>
                   <p className="text-muted-foreground">
-                    San Francisco, California
+                    Pakistan
                   </p>
                 </div>
               </div>
@@ -127,7 +127,7 @@ const Contact = () => {
               <iframe
                 title="Map"
                 className="w-full h-64 md:h-80 rounded-lg border border-border"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.50764017948262!3d37.75781499657633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sus!4v1620796071182!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108948.8885492418!2d73.00690033595083!3d31.423691629002164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x392242a895a55ca9%3A0xdec58f88932671c6!2sFaisalabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1765495050581!5m2!1sen!2s"
                 loading="lazy"
               ></iframe>
             </div>

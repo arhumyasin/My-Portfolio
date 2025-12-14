@@ -6,8 +6,8 @@ import WorkExperience from "@/components/home/work-experience";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "DevsPro | Portfolio",
-  description: "Created by devsloka.in ",
+  title: "Arhum Yasin | Portfolio",
+  description: "Created by Arhum Yasin ",
 };
 
 export default function Home() {
