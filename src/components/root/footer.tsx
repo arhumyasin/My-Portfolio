@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Mail, Heart, GithubIcon, X } from "lucide-react";
+import { Mail, Heart, GithubIcon, X, LinkedinIcon } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -13,11 +13,11 @@ export default function Footer() {
       href: "https://github.com/arhumyasin",
       label: "GitHub",
     },
-    // {
-    //   icon: <Linkedin className="h-5 w-5" />,
-    //   href: "https://linkedin.com",
-    //   label: "LinkedIn",
-    // },
+    {
+      icon: <LinkedinIcon className="h-5 w-5" />,
+      href: "https://www.linkedin.com/in/arhum-yasin-4979ab394",
+      label: "LinkedIn",
+    },
     {
       icon: <X className="h-5 w-5" />,
       href: "https://x.com/ArhumVista",

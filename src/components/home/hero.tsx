@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { Github, XIcon } from "lucide-react";
+import { Github, Linkedin, XIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -138,8 +138,8 @@ export default function Hero() {
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </motion.a>
-            {/* <motion.a
-              href="www.linkedin.com/in/priyanshukrgupta/"
+            <motion.a
+              href="https://www.linkedin.com/in/arhum-yasin-4979ab394"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-full bg-background/80 backdrop-blur-sm border shadow-sm hover:bg-muted/80 transition-colors"
@@ -148,7 +148,7 @@ export default function Hero() {
             >
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
-            </motion.a> */}
+            </motion.a>
             <motion.a
               href="https://x.com/ArhumVista"
               target="_blank"

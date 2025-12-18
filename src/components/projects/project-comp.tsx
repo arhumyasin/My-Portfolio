@@ -69,6 +69,9 @@ const Projects = () => {
                 className="block h-48 overflow-hidden"
               >
                 <Image
+                  width={600}
+                  height={600}
+                  quality={100}
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"

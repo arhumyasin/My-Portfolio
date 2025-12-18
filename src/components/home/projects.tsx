@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { Github, ExternalLink, Code } from "lucide-react";
+import {ExternalLink, Code, GithubIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -177,7 +177,7 @@ function ProjectCard({ project }: { project: Project }) {
               whileHover={{ x: 2 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Github className="h-4 w-4 mr-1" />
+              <GithubIcon className="h-4 w-4 mr-1" />
               GitHub
             </motion.a>
           )}
