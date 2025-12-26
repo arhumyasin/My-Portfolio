@@ -4,10 +4,13 @@ import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 
 export default function BottomHero() {
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef<HTMLElement | null>(null); // ensure correct type
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const currentSection = sectionRef.current; // <- local copy for cleanup
+    if (!currentSection) return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -18,14 +21,10 @@ export default function BottomHero() {
       { threshold: 0.2 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
+    observer.observe(currentSection);
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
+      observer.unobserve(currentSection);
     };
   }, []);
 
@@ -46,15 +45,14 @@ export default function BottomHero() {
   return (
     <section
       ref={sectionRef}
-      className="py-24 flex justify-center items-center px-5 lg:-px-0"
+      className="py-24 flex justify-center items-center px-5 lg:px-0"
     >
       <div className="container max-w-4xl">
         <div className="flex flex-col md:flex-row justify-between gap-12 items-center">
           <div
             className={cn(
-              "max-w-md text-center md:text-left",
-              isVisible ? "opacity-100" : "opacity-0",
-              "transition-opacity duration-700"
+              "max-w-md text-center md:text-left transition-opacity duration-700",
+              isVisible ? "opacity-100" : "opacity-0"
             )}
           >
             <h2 className="text-3xl font-bold mb-6 text-gradient">
@@ -72,9 +70,8 @@ export default function BottomHero() {
                 <span
                   key={skill}
                   className={cn(
-                    "px-3 py-1 bg-secondary dark:bg-accent rounded-full text-xs",
-                    isVisible ? "opacity-100" : "opacity-0",
-                    "transition-opacity duration-700"
+                    "px-3 py-1 bg-secondary dark:bg-accent rounded-full text-xs transition-opacity duration-700",
+                    isVisible ? "opacity-100" : "opacity-0"
                   )}
                   style={{ transitionDelay: `${index * 100 + 400}ms` }}
                 >
@@ -86,9 +83,8 @@ export default function BottomHero() {
 
           <div
             className={cn(
-              "w-full max-w-xs relative",
-              isVisible ? "opacity-100" : "opacity-0",
-              "transition-opacity duration-700 delay-300"
+              "w-full max-w-xs relative transition-opacity duration-700 delay-300",
+              isVisible ? "opacity-100" : "opacity-0"
             )}
           >
             <div className="rounded-full w-48 h-48 md:w-56 md:h-56 mx-auto bg-secondary dark:bg-accent flex items-center justify-center animate-float">
