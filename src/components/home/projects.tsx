@@ -44,7 +44,7 @@ const projects = [
     // live: "https://example.com",
   },
   {
-    id: "portfolio-website",
+    id: "Thirty-Six-Studio",
     title: "Thrity-Six-Studio",
     description:
       "An interactive canvas-based animation where a single click triggers a swarm of chili images, each moving at unique speeds to create a lively and dynamic visual effect. Built using React and advanced animation techniques, this feature demonstrates fine-grained control over frame-based animations, performance optimization, and user-driven interactive experiences.",
@@ -55,7 +55,7 @@ const projects = [
     // live: "https://example.com",
   },
   {
-    id: "portfolio-website",
+    id: "GTA-VI",
     title: "GTA VI Animated Web Experience",
     description:
       "An animated web page inspired by GTA VI, featuring immersive animations and interactive elements that bring the game’s world to life. Built using modern web technologies, this project showcases smooth scrolling, dynamic visual effects, and attention to user engagement through cinematic animations",
