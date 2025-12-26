@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import {ExternalLink, Code, GithubIcon } from "lucide-react";
+import { Code, GithubIcon } from "lucide-react"; 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -206,6 +206,6 @@ interface Project {
       <Link href={`/projects/${project.id}`} className="absolute inset-0">
         <span className="sr-only">View {project.title} details</span>
       </Link>
-    </motion.div> */}
+    </motion.div> }
   {/* );
 } */}
