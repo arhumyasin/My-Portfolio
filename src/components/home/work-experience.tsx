@@ -34,16 +34,16 @@ const experiences = [
     description:
       "Designed and developed immersive digital experiences that blend creativity with technology. Worked on interactive 2D environments, smooth micro-interactions, and visually rich interfaces using modern animation tools. Passionate about pushing the boundaries of web creativity through experimental design, performance-optimized visuals, and innovative user interactions.",
   },
-  {
-    id: 3,
-    title: "Video Editor",
-    company: "GS News",
-    location: "Pakistan",
-    period: "2025",
-    skills: ["Filmora", "News-Style Editing", "Broadcast Formatting", "Story Sequencing","Deadline-Driven Workflows"],
-    description:
-      "Produced fast-paced, broadcast-ready video segments for news content, ensuring clarity, accuracy, and strong visual storytelling. Specialized in cutting news bulletins, highlight packages, tickers, lower-thirds, and breaking-news formats commonly used across leading Pakistani news channels. Maintained tight deadlines, delivered consistent output under pressure, and ensured every edit met newsroom standards for pacing, tone, and credibility.",
-  },
+  // {
+  //   id: 3,
+  //   title: "Video Editor",
+  //   company: "GS News",
+  //   location: "Pakistan",
+  //   period: "2025",
+  //   skills: ["Filmora", "News-Style Editing", "Broadcast Formatting", "Story Sequencing","Deadline-Driven Workflows"],
+  //   description:
+  //     "Produced fast-paced, broadcast-ready video segments for news content, ensuring clarity, accuracy, and strong visual storytelling. Specialized in cutting news bulletins, highlight packages, tickers, lower-thirds, and breaking-news formats commonly used across leading Pakistani news channels. Maintained tight deadlines, delivered consistent output under pressure, and ensured every edit met newsroom standards for pacing, tone, and credibility.",
+  // },
 ];
 
 export default function WorkExperience() {

@@ -98,4 +98,57 @@ export const projectsData: ProjectItem[] = [
     github: "https://github.com/arhumyasin",
     slug: "task-management",
   },
+  {
+    title: "GTA VI Animated Web Experience",
+    description:
+      "A highly interactive, animation-rich website inspired by GTA VI, built with React, JavaScript, Locomotive Scroll, Scroll Trigger, and animation sequences to deliver a premium, modern visual experience.",
+    longDescription:
+      "An animated web page inspired by GTA VI, featuring immersive animations and interactive elements that bring the game’s world to life. Built using modern web technologies, this project showcases smooth scrolling, dynamic visual effects, and attention to user engagement through cinematic animations.",
+    features: [
+      "Immersive Animation",
+      "Dynamic Visual Effects",
+      "Interactive Elements",
+      "Interactive hover effects",
+      "Clean and minimal brand-inspired UI",
+      "High-performance accelerated animations",
+
+    ],
+    challenges:
+      "Locomotive Scroll and GSAP ScrollTrigger often conflict when used together.",
+    image: "/images/GTAFront.png",
+    images: [
+      "/images/GTAFront.png",
+      "/images/GTASecond.png",
+      "/images/Svg.png",
+    ],
+    tech: ["React.js","GSAP + ScrollTrigger","Locomotive Scroll","2D Animation Techniques","Modern UI/UX",],
+    github: "https://github.com/arhumyasin",
+    slug: "GTA-VI",
+  },
+  {
+    title: "Thirty-Six-Studio",
+    description:
+      "An interactive canvas-based animation where a single click triggers a swarm of chili images, each moving at unique speeds to create a lively and dynamic visual effect",
+    longDescription:
+      "An interactive canvas-based animation where a single click triggers a swarm of chili images, each moving at unique speeds to create a lively and dynamic visual effect. Built using React and advanced animation techniques, this feature demonstrates fine-grained control over frame-based animations, performance optimization, and user-driven interactive experiences",
+    features: [
+    "Click-triggered Interactive Animation",
+    "Frame-based Motion with 150 Images per Chili",
+    "Unique Speed per Element for Realistic Movement",
+    "Smooth Performance Optimization",
+    "Canvas-based High-Fidelity Visuals",
+    "Engaging User-driven Experience",
+    ],
+    challenges:
+      "Managing performance while animating multiple high-frame images simultaneously and ensuring smooth motion without lag.",
+    image: "/images/AnimatedStudio.png",
+    images: [
+      "/images/AnimatedStudio.png",
+      "/images/FrontStudio.png",
+      "/images/lastStudio.png",
+    ],
+    tech: ["React.js","Canvas API","JavaScript","Tailwind CSS","GSAP + ScrollTrigger","Locomotive Scroll","2D Animation Techniques","Modern UI/UX","Component-based Architecture",],
+    github: "https://github.com/arhumyasin",
+    slug: "Thirty-Six-Studio",
+  },
 ];

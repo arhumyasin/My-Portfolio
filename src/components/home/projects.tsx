@@ -43,6 +43,28 @@ const projects = [
     github: "https://github.com/arhumyasin",
     // live: "https://example.com",
   },
+  {
+    id: "portfolio-website",
+    title: "Thrity-Six-Studio",
+    description:
+      "An interactive canvas-based animation where a single click triggers a swarm of chili images, each moving at unique speeds to create a lively and dynamic visual effect. Built using React and advanced animation techniques, this feature demonstrates fine-grained control over frame-based animations, performance optimization, and user-driven interactive experiences.",
+    image:
+      "/images/AnimatedStudio.png",
+    tags: ["React.js","Canvas","Frame-based Animation","Interactive UI","GSAP","Html", "CSS", "JavaScript", "2D Animations", "Interactive Design","Design-to-Code Execution"],
+    github: "https://github.com/arhumyasin",
+    // live: "https://example.com",
+  },
+  {
+    id: "portfolio-website",
+    title: "GTA VI Animated Web Experience",
+    description:
+      "An animated web page inspired by GTA VI, featuring immersive animations and interactive elements that bring the game’s world to life. Built using modern web technologies, this project showcases smooth scrolling, dynamic visual effects, and attention to user engagement through cinematic animations",
+    image:
+      "/images/GTAFront.png",
+    tags: ["React.js","GSAP","Locomotive.js","Frame-based Animation","Web-based Cinematic effects","Interactive UI","Html", "CSS", "JavaScript", "2D Animations", "Interactive Design","Design-to-Code Execution"],
+    github: "https://github.com/arhumyasin",
+    // live: "https://example.com",
+  },
 ];
 
 export default function Projects() {
@@ -109,98 +131,81 @@ interface Project {
   live?: string;
 }
 
-function ProjectCard({ project }: { project: Project }) {
+ function ProjectCard({ project }: { project: Project }) {
   return (
-    <motion.div
-      className="group relative overflow-hidden rounded-xl border bg-background shadow-md transition-all h-full"
-      whileHover={{ y: -5 }}
-    >
-      {/* Creative card design with diagonal split */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 z-0" />
-      <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-[100px] z-0" />
-      <div className="absolute bottom-0 left-0 w-16 h-16 bg-primary/5 rounded-tr-[50px] z-0" />
+    <Link href="/projects" className="block h-full">
+      <motion.div
+        className="group relative overflow-hidden rounded-xl border bg-background shadow-md transition-all h-full cursor-pointer"
+        whileHover={{ y: -5 }}
+      >
+        {/* Background decorations */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 z-0" />
+        <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-bl-[100px] z-0" />
+        <div className="absolute bottom-0 left-0 w-16 h-16 bg-primary/5 rounded-tr-[50px] z-0" />
 
-      {/* Project Image with creative overlay */}
-      <div className="aspect-video overflow-hidden relative">
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10" />
-        <motion.div whileHover={{ scale: 1.05 }} transition={{ duration: 0.3 }}>
-          <Image
-            src={project.image || "/placeholder.svg"}
-            alt={project.title}
-            width={600}
-            height={400}
-            className="h-full w-full object-cover transition-transform"
-          />
-        </motion.div>
+        {/* Image */}
+        <div className="relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10" />
 
-        {/* Floating badge */}
-        <div className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium z-20 border">
-          {project.tags[0]}
-        </div>
-      </div>
-
-      {/* Project Content */}
-      <div className="p-6 space-y-4 relative z-10">
-        <div className="flex items-start justify-between">
-          <h3 className="text-xl font-bold">{project.title}</h3>
-          {/* <motion.div                                                              //! Arrow in Right side
-            className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center"
-            whileHover={{ rotate: 360 }}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
           >
-            <ExternalLink className="h-4 w-4" />
-          </motion.div> */}
-        </div>
-        <p className="text-sm text-muted-foreground">{project.description}</p>
+            <Image
+              src={project.image}
+              alt={project.title}
+              width={600}
+              height={400}
+              className="w-full h-auto object-cover block"
+            />
+          </motion.div>
 
-        {/* Tags */}
-        <div className="flex flex-wrap gap-2">
-          {project.tags.slice(1).map((tag) => (
-            <Badge
-              key={tag}
-              variant="outline"
-              className="bg-background border-primary/20 flex items-center gap-1"
-            >
-              <Code className="h-3 w-3" />
-              {tag}
-            </Badge>
-          ))}
+          {/* Floating badge */}
+          <div className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium z-20 border">
+            {project.tags[0]}
+          </div>
         </div>
 
-        {/* Links */}
-        <div className="flex gap-4 pt-2">
+        {/* Content */}
+        <div className="p-6 space-y-4 relative z-10">
+          <h3 className="text-xl font-bold">{project.title}</h3>
+          <p className="text-sm text-muted-foreground">
+            {project.description}
+          </p>
+
+          <div className="flex flex-wrap gap-2">
+            {project.tags.slice(1).map((tag) => (
+              <Badge key={tag} variant="outline">
+                <Code className="h-3 w-3 mr-1" />
+                {tag}
+              </Badge>
+            ))}
+          </div>
+
+          {/* GitHub link (clickable separately) */}
           {project.github && (
             <motion.a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
               className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground"
-              whileHover={{ x: 2 }}
-              whileTap={{ scale: 0.95 }}
             >
               <GithubIcon className="h-4 w-4 mr-1" />
               GitHub
             </motion.a>
           )}
-          {project.live && (
-            <motion.a
-              href={project.live}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground"
-              whileHover={{ x: 2 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <ExternalLink className="h-4 w-4 mr-1" />
-              Live Demo
-            </motion.a>
-          )}
         </div>
-      </div>
+      </motion.div>
+    </Link>
+  );
+}
 
-      {/* View Details Link */}
+
+      {/* View Details Link
       <Link href={`/projects/${project.id}`} className="absolute inset-0">
         <span className="sr-only">View {project.title} details</span>
       </Link>
-    </motion.div>
-  );
-}
+    </motion.div> */}
+  {/* );
+} */}
